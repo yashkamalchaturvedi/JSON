@@ -39,5 +39,3 @@ Output: (3) ["Ford", "BMW", "Fiat"]
 
 parsed["myArray"][2]
 Output : "Fiat"
-
-
