@@ -29,10 +29,12 @@ myJson=`{
     }
 }`;
 
+Output:
 "{\n    \"firstName\": \"John\",\n    \"myArray\": [\n        \"Ford\",\n        \"BMW\",\n        \"Fiat\"\n    ],\n    \"myObject\": {\n        \"name\": \"John\",\n        \"age\": 30,\n        \"car\": null\n    }\n}"
 
 JSON.parse(myJson)
 
+Output:
 {firstName: "John", myArray: Array(3), myObject: {…}}
 firstName: "John"
 myArray: (3) ["Ford", "BMW", "Fiat"]
@@ -41,10 +43,12 @@ myObject: {name: "John", age: 30, car: null}
 // Access values by using bracket ([]) notation
 
 parsed = JSON.parse(myJson);
-{firstName: "John", myArray: Array(3), myObject: {…}}
+Output: {firstName: "John", myArray: Array(3), myObject: {…}}
+
 parsed["myArray"]
-(3) ["Ford", "BMW", "Fiat"]
+Output: (3) ["Ford", "BMW", "Fiat"]
+
 parsed["myArray"][2]
-"Fiat"
+Output : "Fiat"
 
 
