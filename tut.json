@@ -1,0 +1,13 @@
+{
+    "firstName": "John",
+    "myArray": [
+        "Ford",
+        "BMW",
+        "Fiat"
+    ],
+    "myObject": {
+        "name": "John",
+        "age": 30,
+        "car": null
+    }
+}

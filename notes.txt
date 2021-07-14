@@ -1,0 +1,50 @@
+// JSON stands for JavaScript Object Notation
+// JSON is a lightweight format for storing and transporting data
+// JSON is often used when data is sent from a server to a web page
+// JSON is "self-describing" and easy to understand
+
+// JSON Syntax Rules
+// Data is in name/value pairs
+// Data is separated by commas
+// Curly braces hold objects
+// Square brackets hold arrays
+
+// JavaScript built-in function JSON.parse() to convert the string into a JavaScript object
+
+// Arrays in JSON are almost the same as arrays in JavaScript.
+// In JSON, array values must be of type string, number, object, array, boolean or null.
+// In JavaScript, array values can be all of the above, plus any other valid JavaScript expression, including functions, dates, and undefined.
+
+myJson=`{
+    "firstName": "John",
+    "myArray": [
+        "Ford",
+        "BMW",
+        "Fiat"
+    ],
+    "myObject": {
+        "name": "John",
+        "age": 30,
+        "car": null
+    }
+}`;
+
+"{\n    \"firstName\": \"John\",\n    \"myArray\": [\n        \"Ford\",\n        \"BMW\",\n        \"Fiat\"\n    ],\n    \"myObject\": {\n        \"name\": \"John\",\n        \"age\": 30,\n        \"car\": null\n    }\n}"
+
+JSON.parse(myJson)
+
+{firstName: "John", myArray: Array(3), myObject: {…}}
+firstName: "John"
+myArray: (3) ["Ford", "BMW", "Fiat"]
+myObject: {name: "John", age: 30, car: null}
+
+// Access values by using bracket ([]) notation
+
+parsed = JSON.parse(myJson);
+{firstName: "John", myArray: Array(3), myObject: {…}}
+parsed["myArray"]
+(3) ["Ford", "BMW", "Fiat"]
+parsed["myArray"][2]
+"Fiat"
+
+
